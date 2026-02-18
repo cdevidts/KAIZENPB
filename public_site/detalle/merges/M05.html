@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>M05_fila_20__fila_24_-_control_de_asistencia_20-20_con_registros_tardíos</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1
+id="fila-20-fila-24---control-de-asistencia-20-20-con-registros-tardíos">Fila
+20 + Fila 24 - Control de asistencia 20-20 con registros tardíos</h1>
+<h2 id="ficha-ejecutiva">Ficha Ejecutiva</h2>
+<ul>
+<li>Filas combinadas: 20, 24</li>
+<li>Áreas involucradas: Recursos Humanos</li>
+<li>Importancia promedio: 4.0/5</li>
+<li>IBO combinado estimado: 80/100</li>
+<li>KAIZEN dominante: Defectos</li>
+</ul>
+<h2 id="descripción-combinada-propuesta">Descripción Combinada
+Propuesta</h2>
+<p>El cierre 20-20 se apoya en entradas manuales tardías e
+inconsistentes, disminuyendo confiabilidad de asistencia y elevando
+retrabajo de RRHH en cada ciclo mensual.</p>
+<h2 id="subproblemas-comunes">Subproblemas Comunes</h2>
+<ul>
+<li>Hecho por JP; llega a RRHH con feriados faltantes, mal cálculo de
+horas extra e inconsistencias</li>
+<li>Deben corregir con libro de asistencia escaneado</li>
+<li>No se llenan día a día ordenadamente. Los llenan el día 20 a la
+rápida.</li>
+</ul>
+<h2 id="cuello-de-botella-transversal">Cuello De Botella
+Transversal</h2>
+<ul>
+<li>El flujo cruza más de un área con responsabilidades no
+estandarizadas, datos no interoperables y control tardío. Por eso
+aparecen síntomas distintos para el mismo problema estructural.</li>
+</ul>
+<h2 id="impacto-operacional-combinado">Impacto Operacional
+Combinado</h2>
+<ul>
+<li>Multiplica retrabajo entre áreas, aumenta tiempos de ciclo y reduce
+capacidad de anticipar desvíos de costo/plazo/calidad.</li>
+<li>Incrementa el riesgo de decisiones reactivas (urgencia) en lugar de
+gestión preventiva.</li>
+</ul>
+<h2 id="solución-tentativa-microsoft-pre-estudio-técnico">Solución
+Tentativa Microsoft (Pre-Estudio Técnico)</h2>
+<ul>
+<li>Inserción en flujo: captura diaria de asistencia y consolidación de
+corte 20-20.</li>
+<li>Stack tentativo: <strong>Power Apps móvil + Power Automate + Power
+BI RRHH</strong>.</li>
+<li>Automatización: validaciones en origen, consolidado automático de
+corte y trazabilidad de ajustes.</li>
+<li>Licenciamiento foco: digitalizar asistencia y reducir reproceso
+mensual de RRHH.</li>
+<li>Enfoque de despliegue recomendado: piloto cross-área por Wave de 90
+días, con baseline y decisión Go/No-Go al cierre.</li>
+</ul>
+<h2 id="semáforo-de-gravedad">Semáforo De Gravedad</h2>
+<ul>
+<li>Color asignado: <strong>Naranja Alto (#F57C00)</strong></li>
+<li>Base de asignación: promedio de importancia de filas combinadas
+<strong>4.00/5</strong>.</li>
+<li>Lectura ejecutiva: Impacto alto multiárea o en un proceso crítico de
+negocio.</li>
+</ul>
+<h2 id="semáforo-de-tiempo-de-implementación-tentativa">Semáforo De
+Tiempo De Implementación Tentativa</h2>
+<ul>
+<li>Color asignado: <strong>Amarillo Implementación Corta
+(#F9A825)</strong></li>
+<li>Ventana tentativa: <strong>5-8 semanas</strong></li>
+<li>Lectura ejecutiva: Requiere estandarización de proceso y
+automatizaciones moderadas.</li>
+</ul>
+<h2 id="recomendación-de-formulación-única">Recomendación De Formulación
+Única</h2>
+<ul>
+<li>Definir un owner transversal del proceso (no por silo), una
+estructura de datos común y un único punto de verdad para seguimiento
+operativo-financiero.</li>
+</ul>
+<h2 id="trazabilidad">Trazabilidad</h2>
+<ul>
+<li>Fila 20: Roster manual (20-20)</li>
+<li>Fila 24: Libros de asistencia se llenan “Día 20”</li>
+</ul>
+<h2 id="fuentes">Fuentes</h2>
+<ul>
+<li>Transformación IA/Nueva_Matriz_actualizada.xlsx (Hoja1, filas
+2-24)</li>
+<li>Transformación IA/PROTAB_Documento_Contexto_Canonico.pdf</li>
+<li>Transformación IA/Transformación IA/RESUMEN ENTREVISTAS.pdf</li>
+<li>Transformación IA/working/Entrevistas/* (transcripciones por
+área)</li>
+</ul>
+</body>
+</html>
