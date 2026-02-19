@@ -1,0 +1,268 @@
+:root {
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #5f6b7a;
+  --line: #d6dde6;
+  --accent: #0b5d7a;
+  --accent-soft: #e6f4f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Calibri", "Helvetica Neue", Arial, sans-serif;
+  background: radial-gradient(circle at top right, #d9edf4 0%, #f7f9fb 45%);
+  color: var(--text);
+}
+
+a {
+  color: #0a4f8a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: linear-gradient(120deg, #0b5d7a 0%, #1f7a8c 100%);
+  color: white;
+  padding: 1.2rem 1rem 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 0.6rem;
+  font-size: 1.35rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+nav a {
+  color: white;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.92rem;
+}
+
+nav a.active {
+  background: rgba(255,255,255,0.2);
+  border-color: white;
+}
+
+main {
+  max-width: 1200px;
+  margin: 1rem auto 1.6rem;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.95rem;
+  margin-bottom: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.grid.kpi {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.kpi-box {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+.kpi-label {
+  color: var(--muted);
+  font-size: 0.83rem;
+}
+
+.kpi-value {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+.controls {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+input[type="search"],
+select {
+  width: 100%;
+  border: 1px solid #b9c5d3;
+  border-radius: 8px;
+  padding: 0.42rem 0.5rem;
+  background: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e3e8ef;
+  text-align: left;
+  padding: 0.45rem;
+  font-size: 0.9rem;
+  vertical-align: top;
+}
+
+th {
+  background: #f2f6fb;
+}
+
+.color-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  border: 1px solid #d8e0ea;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.82rem;
+  background: #fff;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.legend-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.legend-item {
+  border: 1px solid #d9e0e8;
+  border-radius: 10px;
+  padding: 0.55rem;
+  background: #fff;
+}
+
+.chart-box {
+  border: 1px solid #dce4ee;
+  border-radius: 10px;
+  padding: 0.6rem;
+}
+
+.chart-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 190px 1fr 52px;
+  gap: 0.45rem;
+  align-items: center;
+  margin: 0.35rem 0;
+  font-size: 0.86rem;
+}
+
+.bar-track {
+  height: 13px;
+  background: #edf2f7;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+}
+
+.donut-wrap {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.donut-legend {
+  display: grid;
+  gap: 0.28rem;
+  font-size: 0.83rem;
+}
+
+.card-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.merge-card {
+  border: 1px solid #d8e1eb;
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: #fff;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.flow-step {
+  border: 1px solid #cfe0eb;
+  border-left: 5px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.55rem;
+  background: #fcfeff;
+}
+
+@media (max-width: 900px) {
+  .bar-row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .donut-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

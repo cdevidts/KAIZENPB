@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Kaizen · PROTAB</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="dashboard">
+  <header>
+    <div class="header-inner">
+      <h1>PROTAB · Plataforma Kaizen</h1>
+      <nav>
+        <a data-nav="aprendizaje" href="aprendizaje-kaizen.html">Aprendizaje Kaizen</a>
+        <a data-nav="dashboard" href="dashboard-kaizen.html">Dashboard Kaizen</a>
+        <a data-nav="problemas" href="todos-los-problemas.html">Todos los problemas</a>
+        <a data-nav="merges" href="merges.html">Merges</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Dashboard Kaizen</h2>
+      <p class="small">Panel ejecutivo con trazabilidad de problemas, glosa de colores y graficas por categoria, area, impacto y tiempo de implementacion.</p>
+    </section>
+    
+      <section id="dash-kpis" class="card"></section>
+
+      <section class="grid two">
+        <div id="chart-kaizen"></div>
+        <div id="chart-areas"></div>
+      </section>
+
+      <section class="grid two">
+        <div id="chart-gravedad-prob"></div>
+        <div id="chart-tiempo-prob"></div>
+      </section>
+
+      <section class="grid two">
+        <div id="chart-gravedad-merge"></div>
+        <div id="chart-tiempo-merge"></div>
+      </section>
+
+      <section class="grid two">
+        <section class="card">
+          <h3>Glosa color por impacto/gravedad (usada en dashboard)</h3>
+          <div id="dashboard-glosa-impacto" class="legend-list"></div>
+        </section>
+        <section class="card">
+          <h3>Glosa color por tiempo de implementacion (usada en dashboard)</h3>
+          <div id="dashboard-glosa-tiempo" class="legend-list"></div>
+        </section>
+      </section>
+
+      <section class="card">
+        <h3>Filtro de problemas</h3>
+        <div class="controls">
+          <div><label for="f-search">Buscar</label><input id="f-search" type="search" placeholder="Nombre, area o categoria" /></div>
+          <div><label for="f-area">Area</label><select id="f-area"></select></div>
+          <div><label for="f-kaizen">Categoria Kaizen</label><select id="f-kaizen"></select></div>
+          <div><label for="f-importancia">Importancia</label><select id="f-importancia"></select></div>
+          <div><label for="f-merge">Merge</label><select id="f-merge"><option value="">Todos</option><option value="con">Con merge</option><option value="sin">Sin merge</option></select></div>
+          <div><label for="f-gravedad">Color impacto</label><select id="f-gravedad"></select></div>
+          <div><label for="f-tiempo">Color tiempo</label><select id="f-tiempo"></select></div>
+        </div>
+        <p id="resultado-filtro" class="small"></p>
+        <table>
+          <thead>
+            <tr>
+              <th>Problema</th>
+              <th>Area</th>
+              <th>KAIZEN 3M</th>
+              <th>Tipo KAIZEN</th>
+              <th>Importancia</th>
+              <th>Color impacto</th>
+              <th>Color tiempo</th>
+              <th>Merge</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-problemas"></tbody>
+        </table>
+      </section>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

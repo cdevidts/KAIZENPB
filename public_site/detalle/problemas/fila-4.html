@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>04_fila_4_crm_desalimentado_fichas_de_clientes</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="fila-4---crm-desalimentado-fichas-de-clientes">Fila 4 - CRM
+desalimentado (fichas de clientes)</h1>
+<h2 id="ficha-ejecutiva">Ficha Ejecutiva</h2>
+<ul>
+<li>Área origen: <strong>Comercial</strong></li>
+<li>Importancia operacional: <strong>3/5 (Medio-Alto)</strong></li>
+<li>Indicador de beneficio por resolver (IBO):
+<strong>60/100</strong></li>
+<li>Clasificacion KAIZEN principal: <strong>Muda</strong></li>
+<li>Tipo KAIZEN especifico: <strong>Defectos</strong></li>
+<li>Clasificacion KAIZEN secundaria: <strong>Mura (estandar debil de
+captura) + Talento no utilizado</strong></li>
+</ul>
+<h2 id="descripción-del-problema">Descripción Del Problema</h2>
+<p>CRM desalimentado (fichas de clientes)</p>
+<h2 id="proceso-operacional-afectado">Proceso Operacional Afectado</h2>
+<p>Gestión comercial de cuentas y oportunidades en CRM</p>
+<h2 id="dónde-se-arma-el-cuello-de-botella">Dónde Se Arma El Cuello De
+Botella</h2>
+<p>La ficha cliente no se alimenta en profundidad y el conocimiento
+queda en la memoria del vendedor.</p>
+<h2 id="subproblemas-detectados">Subproblemas Detectados</h2>
+<ul>
+<li>Información cualitativa pobre; memoria del cliente no
+sistematizada</li>
+<li>Invisibilidad de red de decisiones/influencias en CRM; poca
+documentación del customer journey (dependiente del vendedor)</li>
+<li>Distinguir entre sponsor y cliente final</li>
+</ul>
+<h2 id="impacto-en-la-operación">Impacto En La Operación</h2>
+<ul>
+<li>Áreas/roles afectados: Comercial (CAM), Preventa, Gerencia
+Comercial</li>
+<li>KPI/impacto relevante: Menor trazabilidad del customer journey;
+riesgo de pérdida de continuidad comercial ante cambios de
+personas.</li>
+<li>Efecto principal: menor capacidad de control preventivo y mayor
+retrabajo operativo/administrativo.</li>
+</ul>
+<h2 id="evidencia-cualitativa-matriz-entrevistas">Evidencia Cualitativa
+(Matriz + Entrevistas)</h2>
+<ul>
+<li>1.1 Erosión de la memoria institucional por carga de datos
+incompleta (fichas pobres)
+<ul>
+<li>““El CRM tiene una base de datos, digamos, de todos nuestros
+clientes, o debería tenerlo. Cliente Cristóbal de todos nuestros
+clientes a todo nivel. ¿Qué significa todo nivel? Dónde trabaja,
+inclusive… algo que no está depurado, si está casado, si tiene hijo, en
+qué lugar viv…”</li>
+<li>““Algo que no se ha hecho bien Cristóbal, desde que yo digamos,
+estoy trabajando en Protagonista y ahora que me hice cargo del área, es
+algo que hay que mejorar y algo que hay que trabajar el año 2026.”
+(Andrés Alberto Soto Jaña)”</li>
+</ul></li>
+<li>1.2 Invisibilidad de la red de decisión e influencia (sponsor vs
+cliente final) por falta de organigramas
+<ul>
+<li>““Entonces ¿Qué falta acá por ejemplo, son los organigramas de las
+distintas áreas, obviamente que van cambiando la gente de nuestros
+clientes, para entender que de repente pasa Cristóbal, que dentro de los
+proyectos, por ejemplo, tú tienes un cliente final y tienes un
+sponsor,…”</li>
+<li>““Yo te pongo el caso mío que es Collaguas, yo tengo dentro de
+Collaguas y varios sponsors y los otros clientes finales no tienen la
+menor idea de tecnología, porque son clientes, por ejemplo yo saco agua,
+el área vegetal saca agua, pero a nivel de tecnología no tienen la
+menor…”</li>
+</ul></li>
+</ul>
+<h2 id="solución-tentativa-microsoft-pre-estudio-técnico">Solución
+Tentativa Microsoft (Pre-Estudio Técnico)</h2>
+<ul>
+<li>Inserción en flujo: al cambiar etapa de oportunidad en CRM
+(calificar/desarrollar/proponer).</li>
+<li>Stack tentativo: <strong>Dynamics 365 Sales + Copilot for
+Sales</strong> para completar ficha, sponsor, cliente final y contexto
+relacional.</li>
+<li>Automatización: validaciones obligatorias por etapa con
+<strong>Power Automate</strong> y recordatorios de campos críticos
+faltantes.</li>
+<li>Licenciamiento foco: mantener CRM como fuente única; Copilot para
+preparación de reuniones y continuidad comercial.</li>
+<li>Enfoque de despliegue recomendado: <strong>M365-first</strong>,
+piloto por Wave de 90 días con KPIs (OTD, retrabajo, lead time, $
+externo) y criterio Go/No-Go.</li>
+</ul>
+<h2 id="semáforo-de-gravedad">Semáforo De Gravedad</h2>
+<ul>
+<li>Color asignado: <strong>Amarillo Medio-Alto (#FBC02D)</strong></li>
+<li>Base de asignación: score actual <strong>3/5</strong> del
+documento.</li>
+<li>Lectura ejecutiva: Impacto relevante en un área o flujo clave, con
+efectos controlables.</li>
+</ul>
+<h2 id="semáforo-de-tiempo-de-implementación-tentativa">Semáforo De
+Tiempo De Implementación Tentativa</h2>
+<ul>
+<li>Color asignado: <strong>Amarillo Implementación Corta
+(#F9A825)</strong></li>
+<li>Ventana tentativa: <strong>5-8 semanas</strong></li>
+<li>Lectura ejecutiva: Requiere estandarización de proceso y
+automatizaciones moderadas.</li>
+</ul>
+<h2 id="lectura-pre-implementación">Lectura Pre-Implementación</h2>
+<ul>
+<li>El problema está suficientemente definido para diseñar iniciativa
+piloto, pero antes de implementación se recomienda medir línea base
+(tiempo actual, tasa de error, frecuencia, impacto en cierre
+mensual/proyecto).</li>
+</ul>
+<h2 id="fuentes">Fuentes</h2>
+<ul>
+<li>Transformación IA/Nueva_Matriz_actualizada.xlsx (Hoja1, filas
+2-24)</li>
+<li>Transformación IA/PROTAB_Documento_Contexto_Canonico.pdf</li>
+<li>Transformación IA/Transformación IA/RESUMEN ENTREVISTAS.pdf</li>
+<li>Transformación IA/working/Entrevistas/* (transcripciones por
+área)</li>
+</ul>
+</body>
+</html>
