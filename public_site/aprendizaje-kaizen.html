@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aprendizaje Kaizen · PROTAB</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="aprendizaje">
+  <header>
+    <div class="header-inner">
+      <h1>PROTAB · Plataforma Kaizen</h1>
+      <nav>
+        <a data-nav="aprendizaje" href="aprendizaje-kaizen.html">Aprendizaje Kaizen</a>
+        <a data-nav="dashboard" href="dashboard-kaizen.html">Dashboard Kaizen</a>
+        <a data-nav="problemas" href="todos-los-problemas.html">Todos los problemas</a>
+        <a data-nav="merges" href="merges.html">Merges</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Aprendizaje Kaizen</h2>
+      <p class="small">Guia para entender, sin ambiguedad, como se clasifico cada problema: 3M (causa dominante), tipo especifico (manifestacion operativa) y cofactores secundarios.</p>
+    </section>
+    
+      <section id="aprendizaje-metricas" class="card"></section>
+
+      <section class="card">
+        <h3>Como leer la clasificacion (modelo de 3 capas)</h3>
+        <div class="flow">
+          <div class="flow-step"><strong>Capa 1 · KAIZEN 3M (principal)</strong><br/>Define el mecanismo dominante: Muda, Mura o Muri.</div>
+          <div class="flow-step"><strong>Capa 2 · Tipo KAIZEN especifico</strong><br/>Describe la forma concreta del problema (ej: Defectos, Variabilidad de handover, Sobrecarga de JP).</div>
+          <div class="flow-step"><strong>Capa 3 · KAIZEN secundario</strong><br/>Muestra cofactores que agravan el problema. No reemplaza la causa dominante.</div>
+          <div class="flow-step"><strong>Resultado</strong><br/>Se define que atacar primero y con que tipo de contramedida.</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Glosario operativo Kaizen</h3>
+        <p><strong>Muda:</strong> desperdicio que no agrega valor.</p>
+        <p><strong>Mura:</strong> variabilidad del flujo que genera ineficiencia.</p>
+        <p><strong>Muri:</strong> sobrecarga de personas/procesos/sistemas.</p>
+      </section>
+
+      <section class="grid two">
+        <section class="card">
+          <h3>3M aplicados en este diagnostico</h3>
+          <div id="muda-mapping" class="legend-list"></div>
+        </section>
+        <section class="card">
+          <h3>Subtipos canonicos de Muda</h3>
+          <div id="muda-subtipos" class="legend-list"></div>
+        </section>
+      </section>
+
+      <section class="card">
+        <h3>Tipologias especificas detectadas en el caso PROTAB</h3>
+        <p>Estas tipologias son el nivel operativo. Siempre deben leerse despues de identificar primero si el problema dominante es Muda, Mura o Muri.</p>
+        <div id="kaizen-tipos" class="legend-list"></div>
+      </section>
+
+      <section class="grid two">
+        <section class="card">
+          <h3>Co-factores secundarios (lectura correcta)</h3>
+          <p class="small">Estos conteos son co-ocurrencias. Un problema puede tener mas de un cofactor secundario.</p>
+          <div id="mura-muri-evidencia" class="legend-list"></div>
+        </section>
+        <section class="card">
+          <h3>Prioridades activas despues de identificar</h3>
+          <div id="prioridades-kaizen" class="legend-list"></div>
+        </section>
+      </section>
+
+      <section class="card">
+        <h3>Decodificador de clasificacion por problema</h3>
+        <p>Selecciona un problema y lee su clasificacion completa en lenguaje operativo.</p>
+        <label for="apr-problem-select">Problema</label>
+        <select id="apr-problem-select"></select>
+        <div id="apr-problem-decoder" class="decoder-box"></div>
+      </section>
+
+      <section class="grid two">
+        <section class="card">
+          <h3>Glosa de color por impacto/gravedad</h3>
+          <div id="glosa-impacto" class="legend-list"></div>
+        </section>
+        <section class="card">
+          <h3>Glosa de color por tiempo de implementacion</h3>
+          <div id="glosa-tiempo" class="legend-list"></div>
+        </section>
+      </section>
+
+      <section class="card">
+        <h3>Como funciona Kaizen despues de la identificacion</h3>
+        <p>No termina en diagnosticar. La identificacion abre un ciclo operativo de mejora continua con priorizacion, piloto, estandarizacion y control de sostenimiento.</p>
+        <div id="ciclo-post-kaizen" class="flow"></div>
+      </section>
+
+      <section class="card">
+        <h3>Bibliografia base para la reclasificacion</h3>
+        <div id="biblio-kaizen" class="legend-list"></div>
+      </section>
+
+      <section class="card">
+        <h3>Origen del analisis</h3>
+        <ul>
+          <li>Trazabilidad fila a fila: <code>Trazabilidad_Filas_23.csv</code>.</li>
+          <li>Resumen consolidado: <code>Resumen_KAIZEN_Consolidado.md</code>.</li>
+          <li>Problemas individuales: <code>problemas_individuales/*.md</code>.</li>
+          <li>Consolidaciones estructurales: <code>problemas_merged/*.md</code>.</li>
+          <li>Glosa de color aplicada en dashboard: <code>Glosa_Mapa_Colores.md</code>.</li>
+          <li>Bibliografía de reclasificación: <code>Bibliografia_Kaizen_Reclasificacion.md</code>.</li>
+        </ul>
+      </section>
+  </main>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
